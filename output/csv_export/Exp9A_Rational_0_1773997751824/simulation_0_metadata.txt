@@ -1,0 +1,20 @@
+SABCEMM Simulation Metadata
+============================
+Simulation ID: fw_sim_0
+Simulation Number: 0
+
+Input Parameters:
+----------------------------
+rngsettings: 
+agents: 
+dataitemcollectorclasses: 
+qoi: 
+numsteps: 2000
+outputname: fw_sim
+deltat: 1
+writerclass: writercsv
+excessdemandcalculatorsettings: 
+pricecalculatorsettings: 
+stockexchangeclass: stockexchangeharras
+repetitions: 1
+startprice: 1

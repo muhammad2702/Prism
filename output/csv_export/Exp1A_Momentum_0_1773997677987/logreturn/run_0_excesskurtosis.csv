@@ -1,0 +1,11 @@
+# SABCEMM Data Export
+# Collector: logreturn
+# Quantity: logreturn
+# Method: excesskurtosis
+# Group ID: -1
+# Simulation: fw_sim_0
+# Number of Series: 1
+# Time Steps: 1
+#
+TimeStep,Series_0
+0,-0.163149562410661

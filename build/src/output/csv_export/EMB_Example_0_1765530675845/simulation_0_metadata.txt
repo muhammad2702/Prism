@@ -1,0 +1,18 @@
+SABCEMM Simulation Metadata
+============================
+Simulation ID: emb_simulation_0
+Simulation Number: 0
+
+Input Parameters:
+----------------------------
+rngsettings: 
+agents: 
+dividendsettings: 
+qoi: 
+numsteps: 100
+outputname: emb_simulation
+deltat: 1
+excessdemandcalculatorsettings: 
+pricecalculatorsettings: 
+repetitions: 1
+startprice: 4

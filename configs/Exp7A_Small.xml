@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<settings>
+    <writer>writercsv</writer>
+    <filename>Exp7A_Small</filename>
+    <case>
+        <RNGSettings>
+            <RNG>RandomGeneratorStdLib</RNG>
+        </RNGSettings>
+        <agents>
+            <AgentHarras>
+                <count>100</count>
+                <C1>0</C1>
+                <C2>1</C2>
+                <C3>1</C3>
+                <threshold>2</threshold>
+                <g>0.02</g>
+                <alpha>0.95</alpha>
+                <neighbourhoodGeneratorClass>LatticeNeighbourhoodGenerator</neighbourhoodGeneratorClass>
+                <cash>1</cash>
+                <stock>1</stock>
+            </AgentHarras>
+        </agents>
+        <qoi>
+            <price>
+                <full/>
+            </price>
+            <logreturn>
+                <full/>
+            </logreturn>
+        </qoi>
+        <numsteps>1000</numsteps>
+        <outputname>Harras_Sim</outputname>
+        <deltaT>1</deltaT>
+        <writerClass>WriterCSV</writerClass>
+        <excessDemandCalculatorSettings>
+            <excessDemandCalculatorClass>ExcessDemandCalculatorHarras</excessDemandCalculatorClass>
+        </excessDemandCalculatorSettings>
+        <priceCalculatorSettings>
+            <priceCalculatorClass>PriceCalculatorHarras</priceCalculatorClass>
+            <marketDepth>2</marketDepth>
+        </priceCalculatorSettings>
+        <stockExchangeClass>StockExchangeHarras</stockExchangeClass>
+        <repetitions>1</repetitions>
+        <startPrice>1</startPrice>
+    </case>
+</settings>

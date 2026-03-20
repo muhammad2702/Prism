@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+70368cab72e03180da478304b7cb5068 test/MockClasses/CMakeFiles/MockClasses

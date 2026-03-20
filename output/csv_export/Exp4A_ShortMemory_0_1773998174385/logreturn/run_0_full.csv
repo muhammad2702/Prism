@@ -1,0 +1,30 @@
+# SABCEMM Data Export
+# Collector: logreturn
+# Quantity: logreturn
+# Method: full
+# Group ID: -1
+# Simulation: lls_sim_0
+# Number of Series: 1
+# Time Steps: 20
+#
+TimeStep,Series_0
+0,2.50201213812094
+1,0.470003621565736
+2,0
+3,0
+4,0.117783034234161
+5,0
+6,0.105360514520048
+7,0
+8,0
+9,0
+10,0
+11,0
+12,-6.23831939241325
+13,0
+14,0.0246924847159118
+15,0.0240974297938455
+16,0
+17,0.023530381289394
+18,0
+19,0

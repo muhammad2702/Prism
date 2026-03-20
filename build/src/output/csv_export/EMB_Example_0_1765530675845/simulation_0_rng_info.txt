@@ -1,0 +1,6 @@
+RNG Information
+Uniform Generated: 117
+Uniform Unused: 0
+Normal Generated: 2580
+Normal Unused: 1
+Seed: -14781

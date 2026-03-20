@@ -1,0 +1,19 @@
+SABCEMM Simulation Metadata
+============================
+Simulation ID: lls_sim_0
+Simulation Number: 0
+
+Input Parameters:
+----------------------------
+rngsettings: 
+agents: 
+dividendsettings: 
+qoi: 
+numsteps: 1000
+outputname: lls_sim
+deltat: 1
+writerclass: writercsv
+excessdemandcalculatorsettings: 
+pricecalculatorsettings: 
+repetitions: 1
+startprice: 4

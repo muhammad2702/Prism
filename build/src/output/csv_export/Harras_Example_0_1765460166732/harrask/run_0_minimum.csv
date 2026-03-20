@@ -1,0 +1,11 @@
+# SABCEMM Data Export
+# Collector: harrask
+# Quantity: harrask
+# Method: minimum
+# Group ID: -1
+# Simulation: harras_simulation_0
+# Number of Series: 1
+# Time Steps: 1
+#
+TimeStep,Series_0
+0,0.00290487325319853

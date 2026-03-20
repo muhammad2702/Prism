@@ -1,0 +1,17 @@
+SABCEMM Simulation Metadata
+============================
+Simulation ID: harras_simulation_0
+Simulation Number: 0
+
+Input Parameters:
+----------------------------
+rngsettings: 
+agents: 
+qoi: 
+numsteps: 10000
+outputname: harras_simulation
+deltat: 1
+excessdemandcalculatorsettings: 
+pricecalculatorsettings: 
+repetitions: 1
+startprice: 1

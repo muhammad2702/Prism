@@ -1,0 +1,78 @@
+
+<!-- referenced paper: Georges Harras, Didier Sornette. How to grow a bubble: A model of myopic adapting agents, 2011 -->
+<settings>
+    <writer>writertxt</writer>
+    <filename>Harras_Example</filename>
+    <simulationsperfile>2</simulationsperfile><!-- optional -->
+    <numthreads>1</numthreads><!-- optional -->
+    <case>
+        <RNGSettings>
+            <RNG>RandomGeneratorStdLib</RNG>
+        </RNGSettings>
+        <agents>
+            <AgentHarras>
+                <count>2500</count>
+                <!-- specifies the upper bound for c1 (as in the paper, cf. p.8)
+                     c1 is drawn from the uniform distribution [0, C1] -->
+                <C1>0</C1>
+                <!-- see C1 -->
+                <C2>1</C2>
+                <!-- see C1 -->
+                <C3>1</C3>
+                <!-- corresponds to omega in the paper (cf. p.9) -->
+                <threshold>2</threshold>
+                <!-- as in the paper (cf. p.9) -->
+                <g>0.02</g>
+                <!-- as in the paper (cf. p.9) -->
+                <alpha>0.95</alpha>
+                <neighbourhoodGeneratorClass>LatticeNeighbourhoodGenerator</neighbourhoodGeneratorClass>
+                <!-- initial cash -->
+                <cash>1</cash>
+                <!-- initial stock -->
+                <stock>1</stock>
+            </AgentHarras>
+        </agents>
+        <qoi>
+            <price>
+                <full></full>
+            </price>
+            <cash>
+                <full></full>
+            </cash>
+            <stock>
+                <full></full>
+            </stock>
+            <harrasK>
+                <minimum></minimum>
+                <maximum></maximum>
+                <mean></mean>
+                <variance></variance>
+            </harrasK>
+            <logreturn>
+                <skew></skew>
+                <excessKurtosis></excessKurtosis>
+            </logreturn>
+        </qoi>
+        <!-- number of time steps -->
+        <numsteps>10000</numsteps>
+        <outputname>Harras_Simulation</outputname>
+        <!-- TODO: was beschreibt dieser Parameter im Harras-Modell? -->
+        <!-- To get the original Harras model, specify 1 here. -->
+        <deltaT>1</deltaT>
+        <excessDemandCalculatorSettings>
+            <!-- Calculates the excess demand as in eq.2, p.9 -->
+            <excessDemandCalculatorClass>ExcessDemandCalculatorHarras</excessDemandCalculatorClass>
+        </excessDemandCalculatorSettings>
+        <priceCalculatorSettings>
+            <!-- PriceCalculatorHarras: Calculates the price as in eq.3, p.9
+                 PriceCalculatorBisection: Price is chosen such that r(p) == 0 -->
+            <priceCalculatorClass>PriceCalculatorHarras</priceCalculatorClass>
+            <!-- corresponds to lambda in the paper (cf. p.10) -->
+            <marketDepth>0.25</marketDepth>
+        </priceCalculatorSettings>
+        <!-- Specifies how often the simulation is to be run. -->
+        <repetitions>10</repetitions>
+        <!-- initial price -->
+        <startPrice>1</startPrice>
+    </case>
+</settings>

@@ -1,0 +1,12 @@
+# SABCEMM Data Export
+# Collector: price
+# Quantity: price
+# Method: full
+# Group ID: -1
+# Simulation: fw_sim_0
+# Number of Series: 1
+# Time Steps: 2
+#
+TimeStep,Series_0
+0,2.71828182845905
+1,2.71828182845905
